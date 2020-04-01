@@ -1,0 +1,35 @@
+:host {
+  display: flex;
+}
+nav {
+  background: linear-gradient(var(--ho-c-primary-l), var(--ho-c-primary-d));
+  color: var(--ho-c-primary-d);
+  display: flex;
+  flex-flow:column;
+  height: 100%;
+}
+h1 {
+  font-size: 1.4rem;
+  font-weight: 500;
+  padding: 0 12px;
+  flex: 0 0;
+  background: #00000055;
+}
+.sidebar {
+  display: flex;
+  min-width:150px;
+  height: 100%;
+  background: #232323;
+  color: #aaa;
+  transition:.5s all ease-in-out;
+  overflow-y: auto;
+}
+
+.sidebar:not([aria-expanded]) {
+  min-width:0;
+  width:0;
+}
+.sidebar[aria-expanded] {
+  min-width:150px;
+  width:auto;
+}

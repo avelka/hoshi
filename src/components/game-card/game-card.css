@@ -1,0 +1,51 @@
+article {
+  display: flex;
+  background: var(--ho-c-accent-d);
+  height: 100%;
+  width: 100%;
+  border-radius: 2px;
+  align-items: flex-end;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0px 1px 5px rgba(0,0,0,.5);
+  color:#fff;
+}
+
+.goban-viewer{
+  position:absolute;
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+
+header {
+  display: block;
+  width:100%;
+  z-index: 5;
+  background: rgba(0,0,0,.5);
+
+
+}
+a {
+  color:inherit;
+  display:block;
+  transition: .3s all ease-in-out;
+  height: 100%;
+  width: 100%;
+}
+header {
+  display: block;
+  color: inherit;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding: .5rem;
+  transition: .3s all ease-in-out;
+}
+.link-active {
+  transform: scale(1.1);
+}
+.link-active header  {
+
+  background: linear-gradient(var(--ho-c-primary-l), var(--ho-c-primary-d));
+}

@@ -1,0 +1,11 @@
+:host {
+  display: block;
+}
+
+section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 20vh);
+  grid-auto-rows: 20vh;
+  place-content: center;
+  gap: 1em;
+}
